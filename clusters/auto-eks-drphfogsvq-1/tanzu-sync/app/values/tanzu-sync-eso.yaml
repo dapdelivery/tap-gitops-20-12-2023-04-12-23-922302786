@@ -1,0 +1,18 @@
+---
+secrets:
+  eso:
+    aws:
+      region: eu-central-1
+      tanzu_sync_secrets:
+        role_arn: arn:aws:iam::087368549112:role/auto-eks-drphfogsvq-1--tanzu-sync-secrets
+    remote_refs:
+      sync_git_ssh:
+        ssh_private_key:
+          key: dev/auto-eks-drphfogsvq-1/tanzu-sync/sync-git-ssh
+          property: ssh-privatekey
+        ssh_known_hosts:
+          key: dev/auto-eks-drphfogsvq-1/tanzu-sync/sync-git-ssh
+          property: ssh-knownhosts
+      install_registry_dockerconfig:
+        dockerconfigjson:
+          key: dev/auto-eks-drphfogsvq-1/tanzu-sync/install-registry-dockerconfig
